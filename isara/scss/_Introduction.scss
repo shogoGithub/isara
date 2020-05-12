@@ -1,0 +1,39 @@
+.introduction {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    .sentence {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 470px;
+        .frame-box {
+        margin: 0 auto;
+        width: 844px;
+        }
+        h2 {
+            line-height: 1.5;
+            text-align: center;
+            font-weight: normal;
+            span {
+                display: inline-block;
+                line-height: .5;
+                font-weight: bold;
+                border-bottom: 10px solid $light-orange;
+            }
+        }
+    }
+    .circle-icon {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 100%;
+        z-index: 1;
+        p {
+            background-color: $light-orange;
+            color: #fff;
+            padding-left: 12px;
+        }
+    }
+}

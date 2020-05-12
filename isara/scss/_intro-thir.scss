@@ -1,0 +1,61 @@
+.intro-thir {
+    .intro-thir-main {
+        height: 440px;
+        width: 100%;
+        background-image: url(../img/intro-thir.jpg);
+        padding-top: 65px;
+            .inner {
+            .thir-main-wrap {
+                left: 0;
+                top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 330px;
+                text-align: center;
+                h2 {
+                    font-size: 2.5rem;
+                    color: #fff;
+                }
+                .thir-main-text {
+                    h3 {
+                        color: #fff;
+                        font-size: 2rem;
+                        line-height: 2;
+                        span {
+                            color: $light-orange
+                        }
+                    }
+                }
+                .three-step {
+                    display: flex;
+                    justify-content: space-between;
+                    .step {
+                        display: inline-block;
+                        background-color: #fff;
+                        padding: 30px;
+                        width:370px;
+                        border-radius: 5px;
+                        height: 180px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .step-title {
+                            background-color: $light-orange;
+                            border-radius: 3px;
+                            color: #fff;
+                            padding: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-section {
+        h2 {
+            span {
+                color: $light-orange;
+            }
+        }
+    }
+}

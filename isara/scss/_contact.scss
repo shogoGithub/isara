@@ -1,0 +1,44 @@
+.contact {
+    background-color: $light-orange;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .contact-title {
+        display: inline-block;
+        h1 {
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.7rem;
+            padding-bottom: 35px;
+        }
+    }
+    input {
+        font-size: 1.4rem;
+    }
+    .contact-input {
+        width: 800px;
+        height: 50px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        padding-left: 8px;
+        margin-bottom: 20px;
+    }
+    #contact-question {
+        margin-top: 20px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    .access-btn {
+        display: inline-block;
+        width: 800px;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .access-btn:hover {
+        background-color: $orange;
+        border: 1px solid $orange;
+    }
+}

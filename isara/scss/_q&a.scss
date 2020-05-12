@@ -1,0 +1,97 @@
+.qa {
+    .qa-question {
+        width: 100%;
+        height: 280px;
+        background-color: $light-orange;
+        position: relative;
+        .question-wrap {
+            padding-top: 40px;
+            width: 100%;
+            .circle-icon {
+                margin: 0 auto;
+                p {
+                    background-color: #fff;
+                    padding-left: 20px;
+                    color: $light-orange;
+                }
+            }
+            .frame-box {
+                text-align: center;
+                h1 {
+                    line-height: 1.4;
+                    color: #fff;
+                    font-size: 2.8rem;
+                }
+                &:before, &:after {
+                    border-color: #fff;
+                }
+            }
+        }
+        .triangle {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border-top: 25px solid $light-orange;
+            border-right: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 25px solid transparent;
+        }
+    }
+    .qa-answer {
+        width: 100%;
+        height: 1010px;
+        .answer-text {
+            margin-top: 45px;
+            text-align: center;
+            h1 {
+                line-height: 1;
+                padding-bottom: 25px;
+            }
+            h3 {
+                font-size: 1.7rem;
+                letter-spacing: 1.2px;
+                padding-bottom: 35px;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .answers-wrap {
+            .answer-content {
+                margin: 35px 0;
+                display: flex;
+                .answer-img {
+                    border: 2px solid $light-orange;
+                    width: 240px;
+                    height: 240px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .answer-texts {
+                    width: 520px;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                    h2 {
+                        font-weight: normal;
+                        font-size: 1.8rem;
+                        line-height: 1.5;
+                        color: gray;
+                    }
+                    .answer-name {
+                        margin-top: 10px;
+                        display: inline-block;
+                        border-bottom: 1px solid gray;
+                        color: gray;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,194 @@
+///////////////////
+//////  変数 //////
+//////////////////
+$orange:#e7584e;
+$light-orange: #e7c669;
+$white-orange:rgb(240, 232, 194);
+$blue: rgb(24, 86, 185);
+$gray: rgb(216, 214, 214);
+///////////////////
+////// mixin //////
+//////////////////
+@mixin pc {
+    @media screen and (min-width: 1190px) {
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+
+///////////////////
+/////  共通  //////
+//////////////////
+
+html {
+    font-size: 62.5%; //10px//
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.19; //16*1.19=19pxの高
+    letter-spacing: 1.6px;
+}
+
+h1 {
+    font-size: 2.9rem;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.inner {
+    max-width: 92%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.inner-large {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+/////////////////////
+////// header //////
+///////////////////
+
+// お問い合わせボタン
+.access-btn {
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1.6px;
+    &:hover {
+        background-color: rgb(233, 48, 23);
+        border: rgb(233, 48, 23);
+    }
+}
+
+///////////////////////
+//// recruitment /////
+/////////////////////
+
+// SNSボタン
+.recruitment-btn {
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(7, 7, 165);
+}
+
+//Twitterボタン
+.twitter-btn {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+//goodボタン
+.good-btn {
+    background-color: rgb(7, 7, 165);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+///////////////////////
+///// introduction ////
+///////////////////////
+
+// 括弧テキスト
+.frame-box {
+    width: 844px;
+    margin: 0 auto;
+    padding: 30px 70px;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+    &:before {
+        border-left: 4px solid $light-orange;
+        border-top: 4px solid $light-orange;
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        border-right: 4px solid $light-orange;
+        border-bottom: 4px solid $light-orange;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+//丸アイコン
+.circle-icon {
+        width: 70px;
+        p {
+            padding: 28px 0px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+//////////////////
+/// intro-sec ///
+////////////////
+
+.icon {
+    width: 140px;
+    margin: 0;
+    .img {
+    width: 100%;
+    height: 100%;
+    }
+    p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+}
+
+
+///////////////////
+/// intro-thir ///
+/////////////////
+
+// 青いコンテナ
+.sub-section {
+    background-color: $blue;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        color: #fff;
+        line-height: 1.5;
+    }
+}
